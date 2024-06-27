@@ -65,3 +65,112 @@ textarea{
     cursor: pointer;
     border: 1px solid black;
 }
+
+
+@media screen and (max-width:480px) {
+    
+    h4{
+        font-size: 7vw;
+        margin-top: 3vh;
+    }
+    
+    textarea{
+        height: 30vh;
+        width: 80vw;
+        font-size:4vw;
+    }
+    
+    .answer{
+        font-size: 4.5vw;
+    }
+    
+    #btn-container{
+        height: 30vh;
+        width: 60vw;
+        justify-content: space-evenly;
+        flex-direction: column;
+        margin-top: 3vh;
+    }
+    
+    .btn{
+        padding: 2vh;
+        width: 45vw;
+        font-size: 3.2vw;
+        text-wrap: nowrap;
+        margin-top: 2vh;
+    }
+
+
+}
+
+
+@media screen and (min-width:481px) and (max-width:720px) {
+    
+    h4{
+        font-size: 6vw;
+        margin-top: 3vh;
+    }
+    
+    textarea{
+        height: 30vh;
+        width: 70vw;
+        font-size:3.5vw;
+    }
+    
+    .answer{
+        font-size: 3.5vw;
+    }
+    
+    #btn-container{
+        height: 20vh;
+        width: 80vw;
+        justify-content: space-evenly;
+        margin-top: 3vh;
+        gap: 2vw;
+    }
+    
+    .btn{
+        padding: 1vh 2vw;
+        font-size: 2.2vw;
+        text-wrap: nowrap;
+        margin-top: 2vh;
+    }
+
+
+}
+
+
+@media screen and (min-width:721px) and (max-width:1030px) {
+    
+    h4{
+        font-size: 5vw;
+        margin-top: 3vh;
+    }
+    
+    textarea{
+        height: 40vh;
+        width: 60vw;
+        font-size:2.5vw;
+    }
+    
+    .answer{
+        font-size: 2.5vw;
+    }
+    
+    #btn-container{
+        height: 20vh;
+        width: 80vw;
+        justify-content: space-evenly;
+        margin-top: 3vh;
+        gap: 2vw;
+    }
+    
+    .btn{
+        padding: 1vh 2vw;
+        font-size: 1.9vw;
+        text-wrap: nowrap;
+        margin-top: 2vh;
+    }
+
+
+}
