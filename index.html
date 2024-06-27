@@ -3,10 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
     <link rel="stylesheet" href="style.css">
     <title>DOM -txtChnager </title>
 </head>
 <body>
-    
+     <h4>Let's apply the magic on text .</h4>
+     <textarea placeholder="enter your text here" id="txtInput"></textarea>
+     <span class="answer" id="answer"><i class="ri-eye-fill"></i><i class="ri-eye-fill"></i></span>
+     <div id="btn-container">
+        <button class="btn" onclick="textOper('upper')">Uppercase <i class="ri-arrow-up-double-line"></i></button>
+        <button class="btn" onclick="textOper('lower')">Lowerase <i class="ri-arrow-down-double-line"></i></button>
+        <button class="btn" onclick="textOper('countLetters')">Count letters <i class="ri-links-line"></i></button>
+        <button class="btn" onclick="textOper('countWord')">Count words <i class="ri-questionnaire-line"></i></button>
+     </div>
+
+     <script>
+        
+            function textOper(opration){
+                
+                let input = document.getElementById('txtInput').value;
+                let answer= document.getElementById("answer")
+                
+
+                       switch (opration) {
+
+                         case 'upper':
+                            answer.innerText=input.toUpperCase();
+                            break;
+
+                        case 'lower':
+                            answer.innerText=input.toLowerCase()
+                            break;
+                        
+                        case 'countLetters':
+                            answer.innerText =`total letters: ${input.length}`
+                            break;
+
+                        default:
+                            answer.innerText = `total words:${input.split(" ").length}`
+                            break;
+            
+            }
+        }
+          
+     </script>
 </body>
 </html>
